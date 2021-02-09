@@ -14,8 +14,8 @@ def load_library(library)
       emoticons[name][:english] = emoticons.first
     end
   end
-  binding.pry
   emoticons_hash
+  binding.pry
 end
 
 def get_japanese_emoticon
