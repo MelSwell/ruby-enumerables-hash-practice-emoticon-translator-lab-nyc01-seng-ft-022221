@@ -4,8 +4,10 @@ require 'pry'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
+  emoticons.each do |key, value|
+    emoticons[key][:english] = value.first
+  end
   emoticons
-  
 end
 
 def get_japanese_emoticon
