@@ -11,12 +11,7 @@ def load_library(library)
       emoticons_hash[key] = value
     end
   end
-  
-  emoticons_hash.each do |name, emoticons|
-      emoticons_hash[name][:english] = emoticons.first
-      binding.pry
-  end
-  emoticons_hash
+
 end
 
 def get_japanese_emoticon
