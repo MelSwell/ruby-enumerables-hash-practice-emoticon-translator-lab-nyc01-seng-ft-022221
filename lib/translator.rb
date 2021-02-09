@@ -5,11 +5,13 @@ require 'pry'
 def load_library(library)
   emoticons = YAML.load_file(library)
   emoticons_hash = {}
+  
   emoticons.each do |key, value|
     if !emoticons_hash[key]
       emoticons_hash[key] = value
     end
   end
+  binding.pry
   emoticons_hash
 end
 
