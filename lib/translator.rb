@@ -21,6 +21,7 @@ def get_japanese_emoticon(file_path, emoticon)
     binding.pry
     emoticons[key][:english] == emoticon
   end
+  emoticons[target_emoticon][:japanese]
 end
 
 def get_english_meaning
