@@ -8,7 +8,7 @@ def load_library(library)
   
   emoticons.each do |key, value|
     if !emoticons_hash[key]
-      emoticons_hash[key] = value
+      emoticons_hash[key][:english] = value.first
     end
   end
   binding.pry
