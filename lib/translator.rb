@@ -11,7 +11,7 @@ def load_library(library)
       emoticons_hash[key] = value
     end
   end
-  #binding.pry
+  binding.pry
   emoticons_hash
 end
 
