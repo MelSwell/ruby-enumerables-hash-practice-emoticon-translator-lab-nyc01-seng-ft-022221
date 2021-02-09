@@ -10,10 +10,11 @@ def load_library(library)
     if !emoticons_hash[key]
       emoticons_hash[key] = value
     end
-    emoticons_hash.each do |name, emoticons|
+  end
+  
+  emoticons_hash.each do |name, emoticons|
       emoticons_hash[name][:english] = emoticons.first
       binding.pry
-    end
   end
   emoticons_hash
 end
