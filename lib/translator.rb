@@ -7,7 +7,6 @@ def load_library(file_path)
   
   emoticons.each do |key, value|
     emoticons[key][:english] = value.first
-    binding.pry
   end
   emoticons
 end
