@@ -10,7 +10,7 @@ def load_library(library)
     if !emoticons_hash[key]
       emoticons_hash[key] = value
     end
-    emoticons_hash.each do |name, emoticon|
+    emoticons_hash.each do |name, emoticons|
     binding.pry
     end
   end
