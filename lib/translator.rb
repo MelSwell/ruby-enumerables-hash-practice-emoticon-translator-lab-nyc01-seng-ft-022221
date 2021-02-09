@@ -11,7 +11,7 @@ def load_library(library)
       emoticons_hash[key] = value
     end
     emoticons_hash.each do |name, emoticons|
-    binding.pry
+      emoticons[name][:english] = emoticons.first
     end
   end
   emoticons_hash
