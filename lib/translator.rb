@@ -19,8 +19,8 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
   target_emoticon = emoticons.key.find do |key|
     emoticons[key][:english] == emoticon
+    binding.pry
   end
-  binding.pry
 end
 
 def get_english_meaning
